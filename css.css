@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin:0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+
+  background:#74B3CE;
+  background-size: cover;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+}
+.form-container{
+  top:10%;
+  position:relative;
+  left:5%;
+  right:5%;
+  height: 80%;
+  width:90%;
+  background:#2980b9;
+  overflow:hidden;
+  text-align:center;
+}
+.form-containerOverlay{
+  top:10%;
+  position:absolute;
+  left:5%;
+  right:5%;
+  height: 80%;
+  width:90%;
+  overflow:hidden;
+  text-align:center;
+  z-index:1;
+}
+
+.login-content{
+  padding:20px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  height:100%;
+}
+.customButton{
+  cursor:pointer;
+  background:#FE5F55;
+  padding:10px 20px;
+  border-radius:15px;
+  width:50%;
+  margin:5px auto;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+}
+.form-fields2{
+  display:flex;
+  margin:20px 0;
+  text-align:center;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  overflow:hidden;
+  position:absolute;
+  left:195%;
+  top:5%;
+  width:90%;
+  
+}
+.form-fields{
+  display:flex;
+  margin:20px 0;
+  text-align:center;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  overflow:hidden;  
+  position:absolute;
+  left:-100%;
+  top:5%;
+  width:90%;
+}
+.input-Fields{
+  text-align:center;
+  margin:5px auto;
+  border-radius:20px;
+  padding:10px 10px;
+  outline:none;
+  width:80%;
+  border:0.5px solid #495867;
+  background:#F7F7FF;
+  color:#495867;
+  font-family:'Roboto', sans-serif;
+  font-size:1.125em;
+}
+.input-Fields-register{
+text-align:center;
+  margin:5px auto;
+  border-radius:20px;
+  padding:10px 10px;
+  outline:none;
+  width:80%;
+  border:0.5px solid #495867;
+  background:#F7F7FF;
+  color:#495867;
+  font-family:'Roboto', sans-serif;
+  font-size:1.125em;
+}
+.login-container{
+  z-index:1;
+  position:relative;
+  background:#495867;
+  background:#F7F7FF;
+  height:100%;
+  width:48%;
+  overflow:hidden;
+  
+}
+.signup-container{
+  z-index:1;
+  position:relative;
+  background:#495867;
+  height:100%;
+  width:50%;
+  overflow:hidden;
+  display:inline-block;
+}
+.customButton2{
+    cursor:pointer;
+  background:#FE5F55;
+  padding:10px 20px;
+  border-radius:15px;
+  width:50%;
+  margin:10px auto;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+}
+.loginSign{
+  float:left;
+  height:100%;
+  width:50%;
+}
+.SignUpSign{
+  float:left;
+  
+   height:100%;
+  width:50%;
+}
+.title{
+  position:relative;
+  height:200px;
+  font-size:1.25em;
+}
+.title2{
+  font-size:1.25em;
+  position:relative;
+  height:200px;
+
+}
+.title .customButton{
+  font-size:1em;
+  background:none;
+  border:2px solid #fff;
+  padding:10px 5px;
+}
+.title2 .customButton{
+  font-size:1em;
+  background:none;
+  border:2px solid #fff;
+  padding:10px 5px;
+}
+.fixedFooter{
+  position:fixed;
+  bottom:0;
+  text-align:center;
+  margin:0 auto;
+  width:100%;
+  color:#fff;
+  font-family:'Roboto', sans-serif;
+}
