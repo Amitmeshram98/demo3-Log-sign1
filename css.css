@@ -1,189 +1,337 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  margin:0;
-}
-.container {
-  height: 100%;
-  width: 100%;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
-  background:#74B3CE;
-  background-size: cover;
-  color:#fff;
-  font-family: 'Roboto', sans-serif;
-}
-.form-container{
-  top:10%;
-  position:relative;
-  left:5%;
-  right:5%;
-  height: 80%;
-  width:90%;
-  background:#2980b9;
-  overflow:hidden;
-  text-align:center;
-}
-.form-containerOverlay{
-  top:10%;
-  position:absolute;
-  left:5%;
-  right:5%;
-  height: 80%;
-  width:90%;
-  overflow:hidden;
-  text-align:center;
-  z-index:1;
+*,*::after,*::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+} 
+html{
+	height: 100%;
+ font-size: 65.2%;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+ -webkit-font-smoothing: antialiased; 
+	font-weight: 400;
 }
 
-.login-content{
-  padding:20px;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-content:center;
-  height:100%;
+body{
+	height: 100%;
+	background: #e9ebee;
+	color: #1d2129;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	perspective: 1500px;
 }
-.customButton{
-  cursor:pointer;
-  background:#FE5F55;
-  padding:10px 20px;
-  border-radius:15px;
-  width:50%;
-  margin:5px auto;
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-content:center;
+h1{
+		font-weight: 700;
+		font-size: 3.5em;
+		text-align: center;
 }
-.form-fields2{
-  display:flex;
-  margin:20px 0;
-  text-align:center;
-  flex-direction:column;
-  justify-content:center;
-  align-content:center;
-  overflow:hidden;
-  position:absolute;
-  left:195%;
-  top:5%;
-  width:90%;
-  
+.version{
+	position:absolute;
+	bottom: 1em;
+	right: 2em;
+	border-radius: 40px;
+	background: #ff4b2b;
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	padding: .8em 2em;
+	letter-spacing: 1px;
+	transition: transform 80ms ease-in;
 }
-.form-fields{
-  display:flex;
-  margin:20px 0;
-  text-align:center;
-  flex-direction:column;
-  justify-content:center;
-  align-content:center;
-  overflow:hidden;  
-  position:absolute;
-  left:-100%;
-  top:5%;
-  width:90%;
+form input {
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+	font-size: 1.4em;
 }
-.input-Fields{
-  text-align:center;
-  margin:5px auto;
-  border-radius:20px;
-  padding:10px 10px;
-  outline:none;
-  width:80%;
-  border:0.5px solid #495867;
-  background:#F7F7FF;
-  color:#495867;
-  font-family:'Roboto', sans-serif;
-  font-size:1.125em;
+span{
+	color: #333;
+    font-size: 1.4em;
+	display: inline-block;
+    margin: 15px auto;
+	font-weight: 100;
 }
-.input-Fields-register{
-text-align:center;
-  margin:5px auto;
-  border-radius:20px;
-  padding:10px 10px;
-  outline:none;
-  width:80%;
-  border:0.5px solid #495867;
-  background:#F7F7FF;
-  color:#495867;
-  font-family:'Roboto', sans-serif;
-  font-size:1.125em;
+span.remember{
+	float: left;
+		
 }
-.login-container{
-  z-index:1;
-  position:relative;
-  background:#495867;
-  background:#F7F7FF;
-  height:100%;
-  width:48%;
-  overflow:hidden;
-  
+span.remember::before{
+    content:"";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #999;
+    vertical-align: top;
+    margin-right: 4px;
 }
-.signup-container{
-  z-index:1;
-  position:relative;
-  background:#495867;
-  height:100%;
-  width:50%;
-  overflow:hidden;
-  display:inline-block;
+span.forget{
+	float: right;
 }
-.customButton2{
+span.clearfix{
+  clear: both;
+  display: table;
+}
+
+span.loginwith{ 
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+		
+		
+}
+
+span.loginwith::before{
+    content:"";
+    display: inline-block;
+    width: 42%; 
+    height:1px;
+    background: #aaa;
+    vertical-align: middle;
+    margin-right: 5%;
+}
+span.loginwith::after{
+    content:"";
+    display: inline-block;
+    width: 45%; 
+    height: 1px;
+    background: #aaa;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
+span.copy{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	font-size: 1em;
+}
+
+button {
+	display: block;
+	margin: 1em auto;
+    border-radius: 40px;
+    border: 1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+	padding: .8em 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+	
+	
+} 
+button svg{
+    vertical-align: middle;
+}
+
+button:hover {
     cursor:pointer;
-  background:#FE5F55;
-  padding:10px 20px;
-  border-radius:15px;
-  width:50%;
-  margin:10px auto;
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-content:center;
 }
-.loginSign{
-  float:left;
-  height:100%;
-  width:50%;
+button:active {
+    transform: scale(.95);
 }
-.SignUpSign{
-  float:left;
-  
-   height:100%;
-  width:50%;
+button:focus {
+    outline: none;
 }
-.title{
-  position:relative;
-  height:200px;
-  font-size:1.25em;
+
+
+
+#container{
+	width: 95%;
+	max-width: 800px;
+	height: 500px;
+	position: relative;
+	border-radius: 20px;
+	box-shadow: 0 14px 28px -10px rgba(0, 0, 0, .1), 0 10px 10px -10px rgba(0, 0, 0, .02);
+	transform-style: preserve-3d;
+	
+	
 }
-.title2{
-  font-size:1.25em;
-  position:relative;
-  height:200px;
+
+#container>div{
+    position: absolute;
+    width: 50%;
+    min-width: 350px;
+    height: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content{
+		width: 100%;
+		padding: 2em 4em;
+		text-align: center;
+		
+}
+.content p{
+    font-size: 1.4em;
+}
+
+.login{
+		left:0;
+		background:#FAFAFA;
+		border-radius: 20px 0 0 20px;
+		
+	
+}
+.login button{
+    border-radius: 0px;
+    width: 100%;
+}
+.login svg{
+    margin: 1em; 
+    stroke: #999; 
+}
+
+.register{
+		right: 0;
+		z-index: 1;
+		border-radius: 0 20px 20px 0;
+		background:#FAFAFA;
+		
+		
+}
+
+.register button{
+    border-radius: 0px;
+    width: 100%;
+}
+
+.register svg{
+    margin: 1em; 
+    stroke: #999; 
+}
+
+.page{
+		right:0; 
+		color: #fff;
+		border-radius:  0 20px 20px 0; 
+		transform-origin: left center;
+		transition: animation 1s linear;
+	
 
 }
-.title .customButton{
-  font-size:1em;
-  background:none;
-  border:2px solid #fff;
-  padding:10px 5px;
+
+
+.page button{
+    border-color: #fff;
+    background: transparent;
 }
-.title2 .customButton{
-  font-size:1em;
-  background:none;
-  border:2px solid #fff;
-  padding:10px 5px;
+.page p{
+    margin: 2em auto;
 }
-.fixedFooter{
-  position:fixed;
-  bottom:0;
-  text-align:center;
-  margin:0 auto;
-  width:100%;
-  color:#fff;
-  font-family:'Roboto', sans-serif;
+.front{
+		background:linear-gradient(-45deg, #FFCF00 0%, #FC4F4F 100%) no-repeat 0 0 / 200%;
+		z-index: 3;
+	
+}
+.back{
+		background:linear-gradient(135deg, #FC4F4F 0%, #FFCF00 100%,) no-repeat 0 0 / 200%; 
+		z-index: 2;
+			
+}
+.back .content{
+    transform: rotateY(180deg)
+}
+
+.active .front{
+			animation: rot-front .6s ease-in-out normal forwards;
+}
+.active .back {
+			animation: rot-back .6s ease-in-out normal forwards;
+}
+
+.close .front {
+			animation: close-rot-front .6s ease-in-out normal forwards;
+}
+.close .back{ 
+			animation: close-rot-back .6s ease-in-out normal forwards;
+}
+ 
+@keyframes rot-front{ 
+	from{
+		transform: translateZ(2px) rotateY(0deg); 
+	}
+	to{
+		transform: translateZ(1px) rotateY(-180deg);
+	}
+}
+
+@keyframes close-rot-front{ 
+	from{
+		transform: translateZ(1px) rotateY(-180deg); 
+	}
+	to{
+		transform: translateZ(2px) rotateY(0deg);
+	}
+}
+@keyframes rot-back{ 
+	from{
+			transform: translateZ(1px) rotateY(0deg); 
+	}
+	to{
+		transform: translateZ(2px) rotateY(-180deg);
+	}
+}
+@keyframes close-rot-back{ 
+	from{
+			transform: translateZ(2px) rotateY(-180deg); 
+	}
+	to{
+		transform: translateZ(1px) rotateY(0deg);
+	}
+}
+
+
+
+.active .register .content{
+		animation: show .7s ease-in-out normal forwards
+}
+.close .register .content{
+		animation: hide .7s ease-in-out normal forwards
+}
+.active .login .content{
+		animation: hide .7s ease-in-out normal forwards
+}
+.close .login .content{
+		animation: show .7s ease-in-out normal forwards
+}
+
+
+@keyframes show{
+	from{
+			opacity: 0;
+			transform: scale(0.8)
+	}
+	to{
+			opacity: .99;
+			transform: scale(.99)
+	}
+} 
+@keyframes hide{
+	from{
+			opacity: .99;
+			transform: scale(0.99)
+	}
+	to{
+			opacity: 0;
+			transform: scale(0.8)
+	}
 }
